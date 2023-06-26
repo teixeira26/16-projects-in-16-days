@@ -1,0 +1,77 @@
+.App{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container1{
+    width: 50vw;
+    height: 100%;
+    transition: width 1s linear;  
+    z-index: 100;
+    position: relative;
+}
+.container2{
+    width: 50vw;
+    height: 100%;
+    transition: width 1s linear;  
+    z-index: 100; 
+    position: relative;
+}
+
+.crecer{
+    width: 70vw;
+}
+.disminuir{
+    width: 30vw;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fondo1, .fondo2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    flex-direction: column;
+} 
+
+.fondo1{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.fondo2{
+    background-color: rgba(67, 22, 232, 0.5);
+}
+
+.fondo1 button, .fondo2 button{
+    background-color: transparent;
+    border: 3px solid white;
+    padding: 10px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100px;
+}
+
+.fondo1 button:hover {
+    border: 3px solid transparent;
+    background-color: rgba(13, 245, 79, 0.5);
+}
+
+.fondo2 button:hover{
+    border: 3px solid transparent;
+    background-color: inherit;
+}
+
+body{
+    margin: 0;
+}
+

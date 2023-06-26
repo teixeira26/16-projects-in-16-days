@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+
+}
+
+.fondito{
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 30vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+button{
+    border: 5px solid #FFFFFF;
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 7px;
+
+}
+
+
+#texto div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}

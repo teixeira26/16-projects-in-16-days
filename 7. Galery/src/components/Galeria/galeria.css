@@ -1,0 +1,64 @@
+.galeria{
+    display: grid;
+    width: 80vw;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.popUp{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(248, 180, 8, 0.7);
+    z-index: 0;
+}
+
+.imagenSeleccionado{
+    height: 80vh;
+    border-radius: 5px;
+    z-index: 20;
+    cursor:zoom-in;
+}
+
+.navBar{
+    background-color: rgba(255,255,255,0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.icono{
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+    z-index: 10;
+}
+
+
+
+.icono:hover,.flechaDerecha:hover{
+    transform:scale(1.2);
+    cursor:pointer;
+}
+.flechaIzquierda{
+    transform: rotate(180deg);
+}
+.flechaIzquierda:hover{
+
+    transform: rotate(180deg) scale(1.2);
+    cursor:pointer;
+}

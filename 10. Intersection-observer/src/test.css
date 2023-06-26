@@ -1,0 +1,41 @@
+.test{
+    transition: left 2s ease-in;
+    position: relative;
+    width: 250px;
+    left: -250px;
+    display: block;
+    
+
+}
+
+.move{
+   left: calc(100vw);
+   transform: scaleX(-1);
+}
+
+@keyframes flechita{
+    from{
+        top: 0;
+    }
+    to{
+        top:10px
+    }
+}
+.flecha{
+    border-right: 7px double black;
+    border-bottom: 7px double black;
+    transform: rotate(45deg);
+    width: 10px;
+    height: 10px;
+    display: inline;
+    position: relative;
+    animation: flechita .5s linear infinite alternate;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+h1{
+    font-weight: 800;
+}
